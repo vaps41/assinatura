@@ -9,6 +9,7 @@ body{
     align-items: center;
     flex-direction: row;
     position: static;
+    justify-content: flex-end;
 }
 a{
     text-decoration-color: #FFFFFF;
