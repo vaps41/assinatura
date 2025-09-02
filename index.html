@@ -21,36 +21,39 @@
 <!-- CSS moderno e adaptativo -->
 <style>
   .copyright-footer {
-    width: 100%;
-    text-align: center;
-    font-size: 0.85rem;
-    color: #666; /* cinza suave */
-    background: transparent; /* fundo transparente */
-    padding: 10px 0;
-    position: relative;
-  }
+  width: 100%;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #666;
+  background: transparent;
+  padding: 10px 0;
+  line-height: 1.4;
+}
 
-  .copyright-footer a {
-    color: #666;
-    text-decoration: none;
-    margin: 0 5px;
-    font-size: 0.85rem;
-    transition: color 0.3s ease;
-  }
+.copyright-footer p {
+  margin: 4px 0;
+}
 
-  .copyright-footer a:hover {
-    color: #000; /* muda para preto ao passar o mouse */
-  }
+.social-links a {
+  color: #666;
+  text-decoration: none;
+  margin: 0 6px;
+  font-size: 0.85rem;
+  transition: color 0.3s ease;
+}
 
-  /* Responsividade para telas pequenas */
-  @media (max-width: 600px) {
-    .copyright-footer {
-      font-size: 0.75rem;
-      padding: 8px;
-    }
-    .copyright-footer a {
-      display: inline-block;
-      margin: 2px 4px;
-    }
+.social-links a:hover {
+  color: #000;
+}
+
+@media (max-width: 600px) {
+  .copyright-footer {
+    font-size: 0.75rem;
+    padding: 8px;
   }
+  .social-links a {
+    display: inline-block;
+    margin: 2px 4px;
+  }
+}
 </style>
