@@ -1,0 +1,54 @@
+<!-- Rodapé responsivo -->
+<footer class="copyright-footer">
+  © <span id="hoje"></span> Victor Andrade – Todos os direitos reservados.
+  <a href="https://github.com/vaps41" target="_blank">GitHub</a> |
+  <a href="https://www.instagram.com/seu_instagram" target="_blank">Instagram</a> |
+  <a href="https://www.linkedin.com/in/seu_linkedin" target="_blank">LinkedIn</a>
+</footer>
+
+<!-- Script para atualizar o ano -->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const hojeEl = document.getElementById("hoje");
+    if (hojeEl) {
+      hojeEl.textContent = new Date().getFullYear();
+    }
+  });
+</script>
+
+<!-- CSS moderno e adaptativo -->
+<style>
+  .copyright-footer {
+    width: 100%;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #666; /* cinza suave */
+    background: transparent; /* fundo transparente */
+    padding: 10px 0;
+    position: relative;
+  }
+
+  .copyright-footer a {
+    color: #666;
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 0.85rem;
+    transition: color 0.3s ease;
+  }
+
+  .copyright-footer a:hover {
+    color: #000; /* muda para preto ao passar o mouse */
+  }
+
+  /* Responsividade para telas pequenas */
+  @media (max-width: 600px) {
+    .copyright-footer {
+      font-size: 0.75rem;
+      padding: 8px;
+    }
+    .copyright-footer a {
+      display: inline-block;
+      margin: 2px 4px;
+    }
+  }
+</style>
